@@ -34,5 +34,17 @@ const quizData = [
             { text: "Tony Stark", image: "https://placehold.co/50.png?text=Stark" }
         ],
         correct: 1
+    },
+    {
+        question_id: "4A5B6C",
+        question: "What continent does Vietnam belong to?",
+        image: "https://placehold.co/400x200.png?text=Vietnam",
+        options: [
+            { text: "Asia", image: "https://placehold.co/50.png?text=Asia" },
+            { text: "Europe", image: "https://placehold.co/50.png?text=Europe" },
+            { text: "Africa", image: "https://placehold.co/50.png?text=Africa" },
+            { text: "America", image: "https://placehold.co/50.png?text=America" }
+        ],
+        correct: 0
     }
 ];
