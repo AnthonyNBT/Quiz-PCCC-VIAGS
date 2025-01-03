@@ -2,6 +2,20 @@ body {
 	background-color: rgba(0, 169, 196, .3);
 }
 
+.watermark {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100dvw;
+	height: 100dvh;
+	background-image: url("/imgs/others/Viags01.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	opacity: .25;
+	z-index: -1;
+}
+
 .quiz-container {
     padding-top: 20px;
     height: 100dvh;
@@ -14,7 +28,6 @@ body {
 }
 
 .quiz-title {
-	/* height: 160px; */
 	border: 1px solid rgb(218,220,224);
 	border-radius: 8px;
 	padding: 16px;
@@ -27,11 +40,16 @@ body {
 
 .quiz-title > .quiz-information {
 	max-height: 180px;
-	margin-top: 10px
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .quiz-title > .quiz-information::-webkit-scrollbar {
 	display: none;
+}
+
+.quiz-title > .quiz-start-container {
+	border-top: 1px solid rgb(218,220,224);;
 }
 
 .quiz-view .quiz-item:not(:first-child) {
@@ -58,6 +76,7 @@ body {
 	background-color: white;
 	top: 20px;
 	right: 20px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .quiz-control > h3 {

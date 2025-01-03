@@ -87,6 +87,7 @@ function confirm_quiz(questionData) {
 
 $(".quiz-start").on("click", function() {
     $(".quiz-start-container").addClass("d-none");
+    $(".quiz-control").removeClass("d-none");
     start_quiz();
 });
 

@@ -13,6 +13,7 @@
 </head>
 
 <body class="position-relative">
+    <div class="watermark"></div>
     <div class="quiz-container container pb-3">
         <div class="quiz-title">
             <h1 class="text-center mb-0 py-2">Bài kiểm tra phòng cháy chữa cháy</h1>
@@ -50,9 +51,9 @@
                 cupiditate ut ab sequi recusandae illum fugiat ducimus possimus, libero, reiciendis placeat rerum
                 mollitia aliquid consectetur perferendis odit quo?
             </div>
-        </div>
-        <div class="quiz-start-container d-flex justify-content-center mt-3">
-            <button type="button" class="btn btn-primary quiz-start">Bắt đầu</button>
+            <div class="quiz-start-container d-flex justify-content-center mt-3 pt-2">
+                <button type="button" class="btn btn-primary quiz-start">Bắt đầu làm bài</button>
+            </div>
         </div>
         <div id="ID_quiz-view" class="quiz-view overflow-auto py-3">
             <!-- <div class="quiz-item">
@@ -81,7 +82,7 @@
             </div> -->
         </div>
     </div>
-    <div class="quiz-control">
+    <div class="quiz-control d-none">
         <h3>Thông tin câu trả lời</h3>
         <div id="ID_quiz-control-answers"
             class="quiz-control-answers d-flex flex-wrap gap-2 justify-content-center py-2">
