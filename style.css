@@ -8,7 +8,7 @@ body {
 	left: 0;
 	width: 100dvw;
 	height: 100dvh;
-	background-image: url("/imgs/others/Viags01.png");
+	background-image: url("./imgs/others/Viags01.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
