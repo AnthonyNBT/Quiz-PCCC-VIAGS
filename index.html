@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng cháy chữa cháy</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="position-relative">
+    <div class="quiz-container container pb-3">
+        <div class="quiz-title">
+            <h1 class="text-center mb-0 py-2">Bài kiểm tra phòng cháy chữa cháy</h1>
+            <div class="quiz-information overflow-auto px-2">
+                <strong>Thông tin về bài kiểm tra</strong>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatem aliquam fugit tenetur atque
+                officiis minus exercitationem, nobis voluptate eum, eius obcaecati. Eius quia placeat aliquam
+                consequuntur minima at nostrum.
+                Exercitationem reiciendis nam eaque natus recusandae adipisci in mollitia commodi dicta! Sed, est?
+                Molestias corrupti doloribus beatae. Maxime praesentium enim magni minima nisi tempora saepe inventore
+                perspiciatis exercitationem eius. Error!
+                Fugiat aspernatur ullam molestias nesciunt eum cumque quaerat nemo voluptates voluptate? Quae voluptatem
+                harum magni tempora quibusdam ipsum saepe rerum, quisquam ducimus iure ad, pariatur dolore consequatur
+                autem, nobis molestias.
+                Odit ducimus pariatur libero quaerat tenetur, quisquam fugit hic fugiat cumque commodi praesentium saepe
+                mollitia quibusdam tempore doloremque autem nemo, nostrum aspernatur beatae adipisci possimus
+                repellendus, laborum alias. Quo, beatae.
+                Aliquam, alias quam! Exercitationem, natus. Accusantium officia quisquam ratione eos consequuntur
+                praesentium provident beatae, ullam saepe explicabo incidunt, quos ad molestiae nisi error culpa dolor
+                alias pariatur eveniet nemo tempora.
+                Sapiente vitae veritatis doloribus expedita beatae deleniti voluptates sint similique debitis doloremque
+                quaerat reprehenderit, eveniet optio dolorum cum eos quia eum. Dolore possimus ullam laborum! Eius
+                doloribus eum dignissimos recusandae?
+                Sit vero provident magni exercitationem, aliquid sunt animi deserunt id! Mollitia odit possimus impedit
+                quas ad, fuga magni ratione tenetur voluptatibus, esse numquam, facere eos ipsum dolor fugit soluta
+                libero.
+                Aliquam temporibus ex illo adipisci ipsam nostrum nihil delectus aspernatur sapiente accusamus a dolore
+                inventore ab voluptate, rerum ipsum deserunt qui illum blanditiis architecto quidem rem? Unde
+                repudiandae blanditiis incidunt.
+                Aperiam tempora accusamus facilis voluptate, maiores consequatur, ea voluptatibus veniam culpa, optio
+                unde. Reiciendis, neque alias vel illo tenetur quia deleniti culpa expedita id eos tempora maiores
+                perferendis dolorum laboriosam!
+                Corrupti facere tenetur aliquam! Numquam, beatae! Numquam voluptatem repellendus earum similique
+                cupiditate ut ab sequi recusandae illum fugiat ducimus possimus, libero, reiciendis placeat rerum
+                mollitia aliquid consectetur perferendis odit quo?
+            </div>
+        </div>
+        <div class="quiz-start-container d-flex justify-content-center mt-3">
+            <button type="button" class="btn btn-primary quiz-start">Bắt đầu</button>
+        </div>
+        <div id="ID_quiz-view" class="quiz-view overflow-auto py-3">
+            <!-- <div class="quiz-item">
+                <div class="quiz-item_question">
+                    <p class="quiz-item_question-infor fw-bold">Câu 1: What is the capital of France?</p>
+                    <img src="https://placehold.co/400x200.png?text=France" alt="Question image">
+                </div>
+                <div class="quiz-item_answers">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Question01" id="Question01_1">
+                        <label class="form-check-label" for="Question01_1">Berlin</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Question01" id="Question01_2">
+                        <label class="form-check-label" for="Question01_2">Madrid</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Question01" id="Question01_3">
+                        <label class="form-check-label" for="Question01_3">Paris</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Question01" id="Question01_4">
+                        <label class="form-check-label" for="Question01_4">Lisbon</label>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="quiz-control">
+        <h3>Thông tin câu trả lời</h3>
+        <div id="ID_quiz-control-answers"
+            class="quiz-control-answers d-flex flex-wrap gap-2 justify-content-center py-2">
+            <!-- <a class="quiz-control-answer-button">
+                <span>1</span>
+            </a> -->
+        </div>
+        <div class="d-flex justify-content-end pt-2">
+            <button type="button" class="quiz-confirm btn btn-primary">Nộp bài</button>
+        </div>
+    </div>
+
+
+    <div class="modal" tabindex="-1" id="Notify-Modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thông báo</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Cần <strong>Bắt đầu</strong> bài kiểm tra trước khi <strong>Nộp bài</strong>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="Mark-Modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thông báo</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Bạn đạt được: <strong class="quiz-mark-result text-danger"></strong> điểm.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
