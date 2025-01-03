@@ -13,7 +13,7 @@ function generate_question(questionData, questionIndex) {
     let quizItemQuestion = $("<div/>", { class: "quiz-item_question" });
     let quizItemQuestionInfor = $("<p/>", { class: "quiz-item_question-infor fw-bold" });
     quizItemQuestionInfor.html(`Câu ${questionIndex + 1}: ${questionData.question}`).appendTo(quizItemQuestion);
-    if (questionData.image) {
+    if (questionData.image && questionData.image !== "") {
         let quizItemQuestionImage = $("<img/>",
             {
                 src: questionData.image,
@@ -64,7 +64,8 @@ function start_quiz() {
     quizView.html("");
     quizControlAnswers.html("");
     let questions_bank = suffle_array(quizData);
-    for (let index = 0; index < questions_bank.length; index++) {
+    let maxNumber = questions_bank.length > NumberQuestions ? NumberQuestions : questions_bank.length;
+    for (let index = 0; index < maxNumber; index++) {
         generate_question(questions_bank[index], index).appendTo(quizView);
         generate_question_control(questions_bank[index], index).appendTo(quizControlAnswers);
     }
@@ -96,8 +97,8 @@ $(".quiz-confirm").on("click", function() {
         confirm_quiz(quizData);
         let markModal = new bootstrap.Modal('#Mark-Modal');
         markModal.show();
-    
-        $(".quiz-mark-result").html(`${$(".quiz-control-answer-button.right").length}/${quizData.length}`);
+        let maxNumber = quizData.length > NumberQuestions ? NumberQuestions : quizData.length;
+        $(".quiz-mark-result").html(`${$(".quiz-control-answer-button.right").length}/${maxNumber}`);
     }
     else {
         let notifyModal = new bootstrap.Modal('#Notify-Modal');
