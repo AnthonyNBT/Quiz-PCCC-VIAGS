@@ -25,7 +25,8 @@ function generate_question(questionData, questionIndex) {
     let quizItemAnswers = $("<div/>", { class: "quiz-item_answers" });
 
     for (let index = 0; index < questionData.options.length; index++) {
-        let quizItemAnswersFormCheck = $("<div/>", { class: "form-check" });
+        let quizItemAnswersFormCheck = $("<div/>", { class: "form-check ps-0" });
+        let quizItemAnswerWrapper = $("<div/>", { class: "quiz-item-answer" })
         let quizItemAnswersFormCheckInput = $("<input/>",
             {
                 id: `Question${questionIndex + 1}_${index + 1}`,
@@ -35,13 +36,14 @@ function generate_question(questionData, questionIndex) {
                 "data-value": index,
                 "data-target-control": `#ID_Question_Control_${questionData.question_id}`
             });
-        quizItemAnswersFormCheckInput.appendTo(quizItemAnswersFormCheck);
+        quizItemAnswersFormCheckInput.appendTo(quizItemAnswerWrapper);
         let quizItemAnswersFormCheckLabel = $("<label/>",
             {
                 class: "form-check-label",
                 for: `Question${questionIndex + 1}_${index + 1}`
             });
-        quizItemAnswersFormCheckLabel.html(questionData.options[index].text).appendTo(quizItemAnswersFormCheck);
+        quizItemAnswersFormCheckLabel.html(questionData.options[index].text).appendTo(quizItemAnswerWrapper);
+        quizItemAnswerWrapper.appendTo(quizItemAnswersFormCheck);
         quizItemAnswersFormCheck.appendTo(quizItemAnswers);
     }
 
@@ -71,7 +73,24 @@ function start_quiz() {
     }
 }
 
-function confirm_quiz(questionData) {
+function confirm_quiz() {
+    $(".form-check .quiz-item-answer input.form-check-input").each((index, item) => {
+        let questionID = $(item).attr("name").replace("Question_", "");
+        let quizDataMaster = quizData.find(quiz => quiz.question_id == questionID);
+        if ($(item).attr("data-value") == quizDataMaster.correct) {
+            $(item).parent().removeClass("wrong");
+            $(item).parent().addClass("right");
+        }
+        else {
+            if ($(item).is(":checked")) {
+                $(item).parent().removeClass("right");
+                $(item).parent().addClass("wrong");
+            }
+        }
+    });
+}
+
+function confirm_control_quiz(questionData) {
     for (let index = 0; index < questionData.length; index++) {
         let quizItem = $(`input[name="Question_${questionData[index].question_id}"]:checked`)
         let quizItemTargetControl = $(quizItem.attr("data-target-control"));
@@ -94,7 +113,8 @@ $(".quiz-start").on("click", function() {
 
 $(".quiz-confirm").on("click", function() {
     if ($(".quiz-start-container").hasClass("d-none")) {
-        confirm_quiz(quizData);
+        confirm_quiz();
+        confirm_control_quiz(quizData);
         let markModal = new bootstrap.Modal('#Mark-Modal');
         markModal.show();
         let maxNumber = quizData.length > NumberQuestions ? NumberQuestions : quizData.length;

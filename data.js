@@ -349,7 +349,7 @@ const quizData = [
     },
     {
         question_id: "31",
-        question: "",
+        question: "Bình chữa cháy có ký hiệu MT3 là bình chữa cháy loại gì?",
         image: "",
         options: [
             { text: "Loại bột 5kg.", image: "" },
@@ -361,7 +361,7 @@ const quizData = [
     },
     {
         question_id: "32",
-        question: "",
+        question: "Bình chữa cháy có ký hiệu MFZ5 là bình chữa cháy loại gì?",
         image: "",
         options: [
             { text: "Loại bột 5kg.", image: "" },
@@ -373,7 +373,7 @@ const quizData = [
     },
     {
         question_id: "33",
-        question: "",
+        question: "Bình chữa cháy có ký hiệu MFZ3 là bình chữa cháy loại gì?",
         image: "",
         options: [
             { text: "Loại bột 5kg.", image: "" },
@@ -385,7 +385,7 @@ const quizData = [
     },
     {
         question_id: "34",
-        question: "",
+        question: "Cách sử dụng bình chữa cháy bằng bột như thế nào?",
         image: "",
         options: [
             { text: "Ném cả bình vào đám cháy.", image: "" },
@@ -397,7 +397,7 @@ const quizData = [
     },
     {
         question_id: "35",
-        question: "",
+        question: "Bình chữa cháy bằng bột chữa cháy không hiệu quả đối với đám cháy nào?",
         image: "",
         options: [
             { text: "Chất rắn", image: "" },
@@ -409,7 +409,7 @@ const quizData = [
     },
     {
         question_id: "36",
-        question: "",
+        question: "Bình chữa cháy bằng khí chữa cháy hiệu quả ở khu vực nào?",
         image: "",
         options: [
             { text: "Ngoài trời", image: "" },
@@ -421,7 +421,7 @@ const quizData = [
     },
     {
         question_id: "37",
-        question: "",
+        question: "Anh/chị hãy cho biết kiểm tra an toàn về phòng cháy và chữa cháy gồm những nội dung nào?",
         image: "",
         options: [
             { text: "Điều kiện an toàn về phòng cháy và chữa cháy của cơ sở, khu dân cư, hộ gia đình, rừng, phương tiện giao thông cơ giới theo quy định của Luật Phòng cháy và chữa cháy, Nghị định này và các quy định của pháp luật có liên quan.", image: "" },
@@ -433,7 +433,7 @@ const quizData = [
     },
     {
         question_id: "38",
-        question: "",
+        question: "Khi có cháy xảy ra do điện, đầu tiên, ta phải làm gì?",
         image: "",
         options: [
             { text: "Báo động cho mọi người xung quanh biết, đồng thời gọi điện thoại thông báo cho lực lượng Cảnh sát PCCC qua số 114.", image: "" },
@@ -445,7 +445,7 @@ const quizData = [
     },
     {
         question_id: "39",
-        question: "",
+        question: "Các biện pháp phòng cháy điện trong hộ gia đình?",
         image: "",
         options: [
             { text: "Không dùng các thiết bị, dụng cụ tiêu thụ điện kém chất lượng, không rõ nguồn gốc.", image: "" },
@@ -457,7 +457,7 @@ const quizData = [
     },
     {
         question_id: "40",
-        question: "",
+        question: "Để đảm bảo an toàn khi sử dụng khí gas trong gia đình, anh/chị sẽ phải làm gì?",
         image: "",
         options: [
             { text: "Khóa van an toàn sau mỗi lần sử dụng.", image: "" },
@@ -469,7 +469,7 @@ const quizData = [
     },
     {
         question_id: "41",
-        question: "",
+        question: "Luật PCCC quy định một trong những biện pháp cơ bản đầu tiên trong công tác phòng cháy là gì?",
         image: "",
         options: [
             { text: "Sử dụng an toàn các chất cháy, chất nổ, nguồn lửa nguồn nhiệt, thiết bị và dụng cụ sinh lửa, sinh nhiệt, chất sinh lửa, sinh nhiệt.", image: "" },
@@ -481,7 +481,7 @@ const quizData = [
     },
     {
         question_id: "42",
-        question: "",
+        question: "Khi ngửi thấy mùi khét, khói hoặc thấy lửa thì gọi cho lực lượng nào?",
         image: "",
         options: [
             { text: "Khi ngửi thấy mùi khét, khói hoặc thấy lửa thì gọi ngay cho lực lượng PCCC, qua số 114.", image: "" },
@@ -493,7 +493,7 @@ const quizData = [
     },
     {
         question_id: "43",
-        question: "",
+        question: "Khi nào thì nên kiểm tra định kỳ bình cứu hỏa, khi nào thì nạp bình cứu hỏa?",
         image: "",
         options: [
             { text: "Cứ sau 6 tháng các bạn nên kiểm tra định kỳ bình cứu hỏa hay các dụng cụ phòng cháy chữa cháy khác,bạn nên nhớ không nên bỏ qua bất cứ một thiết bị nào, vì thiết bị nào cũng có tầm ảnh hưởng, tác dụng liên quan đến dập tắt đám cháy. Nếu như, vạch kim bình cứu hỏa không ở mốc xanh nữa nghĩa là bạn phải đi nạp bình cứu hỏa hoặc sạc bình chữa cháy để đảm bảo an toàn và có thể đảm bảo trong quá trình hoạt động.", image: "" },
@@ -505,7 +505,7 @@ const quizData = [
     },
     {
         question_id: "44",
-        question: "",
+        question: "Bạn nên để bình chữa cháy ở đâu?",
         image: "",
         options: [
             { text: "Bạn phải để bình chữa cháy ở một nơi bạn có thể thoát ra, nhìn thấy dễ dàng nhất hoặc bạn nên lắp nó gần lối thoát hiểm, trên tầm với của trẻ em để có thể dám chắc được ai cũng có thể sử dụng.", image: "" },
@@ -517,7 +517,7 @@ const quizData = [
     },
     {
         question_id: "45",
-        question: "",
+        question: "Khi ngoài cửa căn hộ đã bị bao vây bởi lửa không thể thoát ra ngoài, bạn làm thế nào?",
         image: "",
         options: [
             { text: "Ở yên trong phòng, chờ người đến cứu.", image: "" },
@@ -529,7 +529,7 @@ const quizData = [
     },
     {
         question_id: "46",
-        question: "",
+        question: "Với trường hợp đám cháy không xuất hiện ở phòng, tầng của mình. Việc đầu tiên các bạn cần phải làm gì?",
         image: "",
         options: [
             { text: "Ở yên trong phòng", image: "" },
@@ -541,7 +541,7 @@ const quizData = [
     },
     {
         question_id: "47",
-        question: "",
+        question: "Phương tiện PCCC gồm những loại phương tiện nào?",
         image: "",
         options: [
             { text: "Bình chữa cháy", image: "" },
@@ -553,7 +553,7 @@ const quizData = [
     },
     {
         question_id: "48",
-        question: "",
+        question: "Là người đứng đầu một cơ sở khi để xảy ra cháy, nổ tại cơ sở mình thì người đó phải chịu hình thức xử lý như thế nào?",
         image: "",
         options: [
             { text: "Xử lý hình sự", image: "" },
@@ -565,7 +565,7 @@ const quizData = [
     },
     {
         question_id: "49",
-        question: "",
+        question: "Các hành vi bị nghiêm cấm theo quy định của Luật PCCC?",
         image: "",
         options: [
             { text: "Cố ý gây cháy, nổ làm tổn hại đến tính mạng, sức khoẻ con người; gây thiệt hại tài sản của Nhà nước, cơ quan, tổ chức, cá nhân; ảnh hưởng xấu đến môi trường, an ninh và trật tự an toàn xã hội.", image: "" },
@@ -577,7 +577,7 @@ const quizData = [
     },
     {
         question_id: "50",
-        question: "",
+        question: "Trách nhiệm phòng cháy và chữa cháy là của ai?",
         image: "",
         options: [
             { text: "Cảnh sát PCCC", image: "" },

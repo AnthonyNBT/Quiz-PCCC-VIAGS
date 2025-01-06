@@ -67,6 +67,21 @@ body {
 	margin-bottom: 10px;
 }
 
+.quiz-item-answer {
+	padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    padding-left: 30px !important;
+    border-radius: 8px !important;
+}
+
+.quiz-item-answer.right {
+	background-color: rgba(25, 135, 84, .3);
+}
+
+.quiz-item-answer.wrong {
+	background-color: rgba(220, 53, 69, .3);
+}
+
 .quiz-control {
 	position: fixed;
     width: 300px;
