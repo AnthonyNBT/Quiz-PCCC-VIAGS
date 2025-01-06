@@ -109,6 +109,16 @@ $(".quiz-start").on("click", function() {
     $(".quiz-start-container").addClass("d-none");
     $(".quiz-control").removeClass("d-none");
     start_quiz();
+    $(".quiz-confirm").removeClass("d-none");
+    $(".quiz-restart").addClass("d-none");
+});
+
+$(".quiz-restart").on("click", function() {
+    $(".quiz-start-container").addClass("d-none");
+    $(".quiz-control").removeClass("d-none");
+    start_quiz();
+    $(".quiz-confirm").removeClass("d-none");
+    $(".quiz-restart").addClass("d-none");
 });
 
 $(".quiz-confirm").on("click", function() {
@@ -119,6 +129,8 @@ $(".quiz-confirm").on("click", function() {
         markModal.show();
         let maxNumber = quizData.length > NumberQuestions ? NumberQuestions : quizData.length;
         $(".quiz-mark-result").html(`${$(".quiz-control-answer-button.right").length}/${maxNumber}`);
+        $(".quiz-confirm").addClass("d-none");
+        $(".quiz-restart").removeClass("d-none");
     }
     else {
         let notifyModal = new bootstrap.Modal('#Notify-Modal');
