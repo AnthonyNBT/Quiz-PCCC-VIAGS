@@ -22,10 +22,10 @@ function generate_question(questionData, questionIndex) {
         quizItemQuestionImage.html(questionData.question).appendTo(quizItemQuestion);
     }
 
-    let quizItemAnswers = $("<div/>", { class: "quiz-item_answers" });
+    let quizItemAnswers = $("<div/>", { class: "quiz-item_answers d-flex flex-wrap" });
 
     for (let index = 0; index < questionData.options.length; index++) {
-        let quizItemAnswersFormCheck = $("<div/>", { class: "form-check ps-0" });
+        let quizItemAnswersFormCheck = $("<div/>", { class: `form-check ps-0 ${questionData.cssClass}` });
         let quizItemAnswerWrapper = $("<div/>", { class: "quiz-item-answer" })
         let quizItemAnswersFormCheckInput = $("<input/>",
             {
@@ -42,7 +42,24 @@ function generate_question(questionData, questionIndex) {
                 class: "form-check-label",
                 for: `Question${questionIndex + 1}_${index + 1}`
             });
-        quizItemAnswersFormCheckLabel.html(questionData.options[index].text).appendTo(quizItemAnswerWrapper);
+
+        if (questionData.options[index].image !== "") {
+            let quizItemAnswersFormCheckLabelImg = $("<img/>",
+                {
+                    class: "quiz-item-answer-img",
+                    src: questionData.options[index].image,
+                    height: 250
+                });
+            quizItemAnswersFormCheckLabelImg.appendTo(quizItemAnswersFormCheckLabel);
+        }
+
+        if (questionData.options[index].text !== "") {
+            let quizItemAnswersFormCheckLabelText = $("<span/>");
+            quizItemAnswersFormCheckLabelText.html(questionData.options[index].text);
+            quizItemAnswersFormCheckLabelText.appendTo(quizItemAnswersFormCheckLabel);
+        }
+
+        quizItemAnswersFormCheckLabel.appendTo(quizItemAnswerWrapper);
         quizItemAnswerWrapper.appendTo(quizItemAnswersFormCheck);
         quizItemAnswersFormCheck.appendTo(quizItemAnswers);
     }
