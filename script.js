@@ -154,3 +154,7 @@ $(".quiz-confirm").on("click", function() {
         notifyModal.show();
     }
 });
+
+$("#minimize-quiz-control").on("click",  function() {
+    $(".quiz-control").toggleClass("minimize")
+});

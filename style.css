@@ -137,3 +137,20 @@ body {
 	width: 22px;
 	text-align: center;
 }
+
+.minimize.quiz-control {
+	width: 40px !important;
+	padding: 0 !important;
+}
+
+.minimize .quiz-control-header {
+	border-bottom: none !important;
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.minimize .quiz-control-title,
+.minimize #ID_quiz-control-answers,
+.minimize .quiz-control-footer {
+	display: none !important;
+}

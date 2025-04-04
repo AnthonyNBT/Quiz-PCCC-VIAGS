@@ -20,7 +20,9 @@
             <div class="quiz-information overflow-auto px-2">
                 <strong>Thông tin về bài kiểm tra</strong>
                 <br>
-                Đây là thông tin giới thiệu về bài kiểm tra
+                - Demo version
+                <br>
+                - Đây là thông tin giới thiệu về bài kiểm tra
             </div>
             <div class="quiz-start-container d-flex justify-content-center mt-3 pt-2">
                 <button type="button" class="btn btn-primary quiz-start">Bắt đầu làm bài</button>
@@ -53,15 +55,20 @@
             </div> -->
         </div>
     </div>
-    <div class="quiz-control d-none">
-        <h3>Thông tin câu trả lời</h3>
+    <div class="quiz-control d-none minimize">
+        <div class="quiz-control-header d-flex justify-content-between align-items-center pb-2 mb-2 border-bottom">
+            <span class="h4 mb-0 quiz-control-title">Thông tin câu trả lời</span>
+            <div class="quiz-control-answer-button" id="minimize-quiz-control">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+            </div>
+        </div>
         <div id="ID_quiz-control-answers"
             class="quiz-control-answers d-flex flex-wrap gap-2 justify-content-center py-2">
             <!-- <a class="quiz-control-answer-button">
                 <span>1</span>
             </a> -->
         </div>
-        <div class="d-flex justify-content-end pt-2">
+        <div class="d-flex justify-content-end pt-2 quiz-control-footer">
             <button type="button" class="quiz-confirm btn btn-primary">Nộp bài</button>
             <button type="button" class="btn btn-info quiz-restart d-none">Làm lại</button>
         </div>
