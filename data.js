@@ -383,10 +383,10 @@ const quizData = [
         image: "",
         cssClass: "w-100",
         options: [
-            { text: "Loại bột 5kg.", image: "./imgs/data/Viags01_01.png" },
-            { text: "Loại khí 5kg.", image: "./imgs/data/Viags01_02.png" },
-            { text: "Loại bột 3kg.", image: "./imgs/data/Viags01_03.png" },
-            { text: "Loại khí 3kg.", image: "./imgs/data/Viags01_04.png" }
+            { text: "Loại bột 5kg.", image: "" },
+            { text: "Loại khí 5kg.", image: "" },
+            { text: "Loại bột 3kg.", image: "" },
+            { text: "Loại khí 3kg.", image: "" }
         ],
         correct: 3
     },
